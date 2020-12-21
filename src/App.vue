@@ -1,7 +1,7 @@
 <template>
 <div>
   <app-header></app-header>
-  <app-main></app-main>
+  <router-view></router-view>
   <app-footer></app-footer>
 </div>
 </template>
@@ -13,7 +13,6 @@ import Main from  "./components/Main"
 export default {
   components : {
     appHeader : Header,
-    appMain : Main,
     appFooter : Footer
   }
 }

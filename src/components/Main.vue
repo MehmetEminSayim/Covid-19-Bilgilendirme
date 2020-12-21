@@ -4,15 +4,15 @@
       <div class="container">
         <div class="row home_banner_inner">
           <div class="col-sm-7">
-            <h5 class="wow fadeInUp" data-wow-delay="300ms">Stop COVID-19</h5>
-            <h3 class="wow fadeInUp" data-wow-delay="500ms">How can we fight together against Coronavirus?
+            <h5 class="wow fadeInUp" data-wow-delay="300ms">COVID-19 </h5>
+            <h3 class="wow fadeInUp" data-wow-delay="500ms">Koronavirüs Nedir?
             </h3>
             <p class="wow fadeInUp" data-wow-delay="400ms">
-              It’s never been clearer that we’re all global citizens,
-              <br />and we all have a part to play. The novel strain of<br />
-              coronavirus, has officially reached pandemic proportions.
+              lk olarak Çin’in Wuhan bölgesinde, 2019 yılı Aralık ayının başında görülüp, bu bölgedeki yetkililer tarafından tanımlandığı için gayri resmi Wuhan koronavirüsü adıyla da bilinen yeni koronavirüs solunum yolu enfeksiyonuna neden olan ve insandan insana geçebilen bulaşıcı bir virüstür.
             </p>
-            <a class="main_btn wow fadeInLeft" data-wow-delay="300ms" href="#">How to Prevent</a>
+            <router-link to="/about" exact active-class="active" tag="div">
+              <a class="main_btn wow fadeInLeft" data-wow-delay="300ms" href="#">Corona Virüs Nedir?</a>
+            </router-link>
             <div class="row home_option">
               <div class="col-lg-6 wow fadeIn" data-wow-delay="300ms">
                 <div class="media">
@@ -20,8 +20,8 @@
                     <i class="linearicons-shield-check"></i>
                   </div>
                   <div class="media-body">
-                    <h4>Protection</h4>
-                    <p>How to protect yourself</p>
+                    <h4>Koruma</h4>
+                    <p>Kendinizi nasıl korursunuz</p>
                   </div>
                 </div>
               </div>
@@ -31,8 +31,8 @@
                     <i class="linearicons-pulse"></i>
                   </div>
                   <div class="media-body">
-                    <h4>Symptoms</h4>
-                    <p>Check basic symptoms</p>
+                    <h4>Semptomlar</h4>
+                    <p>Temel belirtileri kontrol edin</p>
                   </div>
                 </div>
               </div>
@@ -42,8 +42,8 @@
                     <i class="linearicons-bubbles"></i>
                   </div>
                   <div class="media-body">
-                    <h4>Appointment</h4>
-                    <p>Get online consultation</p>
+                    <h4>Yardım Alın</h4>
+                    <p>Sağlık hizmetlerinden danışmanlık alın?</p>
                   </div>
                 </div>
               </div>
@@ -53,8 +53,8 @@
                     <i class="linearicons-document2"></i>
                   </div>
                   <div class="media-body">
-                    <h4>About COVID-19</h4>
-                    <p>Read more about coronavirus</p>
+                    <h4>Bilgilendirme</h4>
+                    <p>Bilgilendirmeleri takip edin</p>
                   </div>
                 </div>
               </div>
@@ -62,11 +62,13 @@
           </div>
           <div class="col-sm-5">
             <img class="img-fluid wow fadeInRight" data-wow-delay="400ms"
-                 src="assets/images/svg/home-banner-cleaner.svg" alt="" />
+                 src="src/assets/siteAssets/images/svg/home-banner-cleaner.svg" alt="" />
           </div>
         </div>
       </div>
     </section>
+    <app-api></app-api>
+
     <section class="check_now_area">
       <div class="container">
         <div class="row m-0 justify-content-between">
@@ -78,199 +80,16 @@
                 <img src="assets/images/check-3.png" alt="" />
               </div>
               <div class="media-body">
-                <h4>Think you might be affected?</h4>
+                <h4>Corona Virüs semptomların mı var?</h4>
                 <p>
-                  Try our simple coronavirus checker to find out what you need
-                  to do.
+                  Hemen 112 acil sağlık hizmet hattını ara ve gerekli bilgilendirmeyi edin.
                 </p>
               </div>
             </div>
           </div>
           <div class="right">
-            <a class="icon_btn wow fadeInRight" data-wow-delay="400ms" href="#">Check now <i
+            <a class="icon_btn wow fadeInRight" data-wow-delay="400ms" href="tel:112">Hemen 112 Ara <i
               class="linearicons-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="home_about_corona">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="home_ab_img wow fadeInUp" data-wow-delay="400ms">
-              <img src="src/assets/siteAssets/images/home-ab-img.png" alt="" />
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="home_ab_text">
-              <div class="home_ab_text_inner">
-                <div class="home_ab_item">
-                  <h6>COVID-19 the disease</h6>
-                  <h4>About the Coronavirus</h4>
-                  <p>
-                    Coronavirus disease 2019 (COVID-19) is an infectious
-                    disease caused by severe acute respiratory syndrome
-                    coronavirus 2. The disease was first identified in 2019 in
-                    Wuhan, the capital of Hubei, China, and has since spread
-                    globally, resulting in the 2019–2020 coronavirus pandemic.
-                  </p>
-                </div>
-                <div class="home_ab_item">
-                  <h4>What is the COVID-19?</h4>
-                  <p>
-                    COVID-19 is a new strain of coronavirus that has not been
-                    previously identified in humans. It was first identified
-                    in Wuhan, Hubei Province, China, where it has caused a
-                    large and ongoing outbreak. It has since spread more
-                    widely in China.
-                  </p>
-                  <a class="text_btn" href="#">Read more about <i class="linearicons-arrow-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="world_wide_tracker pad_top">
-      <div class="container">
-        <img class="tracker_map" src="src/assets/siteAssets/images/tracker-map-bg.png" alt="" />
-        <div class="tracker_text">
-          <h5>Worldwide Tracker</h5>
-          <h2>Confirmed Coronavirus Cases</h2>
-          <p>Last updated: April 08, 2020, 01:43 GMT</p>
-        </div>
-        <div class="row tracker_inner">
-          <div class="col-lg-3 col-6 wow fadeIn" data-wow-delay="300">
-            <div class="media">
-              <div class="d-flex">
-                <img src="assets/images/icon/corona-red-1.png" alt="" />
-              </div>
-              <div class="media-body">
-                <h2 id="total_cases"></h2>
-                <p>Total Cases</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 wow fadeIn" data-wow-delay="400">
-            <div class="media">
-              <div class="d-flex">
-                <img src="assets/images/icon/corona-black-1.png" alt="" />
-              </div>
-              <div class="media-body">
-                <h2 id="total_deaths"></h2>
-                <p>Total Deaths</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 wow fadeIn" data-wow-delay="500">
-            <div class="media">
-              <div class="d-flex">
-                <img src="assets/images/icon/corona-green-1.png" alt="" />
-              </div>
-              <div class="media-body">
-                <h2 id="total_recovered"></h2>
-                <p>Recovered</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 wow fadeIn" data-wow-delay="600">
-            <div class="media">
-              <div class="d-flex">
-                <img src="assets/images/icon/corona-yellow-1.png" alt="" />
-              </div>
-              <div class="media-body">
-                <h2 id="new_cases"></h2>
-                <p>New Cases</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tracker_btn">
-          <a class="green_btn wow fadeInUp" data-wow-delay="500" href="#"><i class="linearicons-earth-lock"></i> See
-            Live
-            Track</a>
-        </div>
-      </div>
-    </section>
-    <section class="symptoms_area">
-      <div class="container">
-        <ul class="nav image_list">
-          <li><img src="assets/images/symptoms-user/sm-1.png" alt=""></li>
-          <li><img src="assets/images/symptoms-user/sm-2.png" alt=""></li>
-          <li><img src="assets/images/symptoms-user/sm-3.png" alt=""></li>
-        </ul>
-        <div class="title_text wow fadeInUp" data-wow-delay="400ms">
-          <h5>Symptoms of COVID-19</h5>
-          <h2>What are the basic symptoms?</h2>
-        </div>
-        <div class="row symptoms_inner">
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="400ms">
-            <div class="symptoms_item">
-              <div class="media">
-                <div class="d-flex">
-                  <img src="assets/images/symptoms-user/symptoms-1.png" alt="" />
-                </div>
-                <div class="media-body">
-                  <h4>High fever</h4>
-                  <p>
-                    Fever is a key symptom, experts say. Don't fixate on a
-                    number, but know it's not a fever until temperature
-                    reaches at least 39°C.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="500ms">
-            <div class="symptoms_item">
-              <div class="media">
-                <div class="d-flex">
-                  <img src="assets/images/symptoms-user/symptoms-2.png" alt="" />
-                </div>
-                <div class="media-body">
-                  <h4>Sortness of Breath</h4>
-                  <p>
-                    You feel hot to touch on your chest or back It is a common
-                    sign and also may appear in 2-10 days if you affected.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="600ms">
-            <div class="symptoms_item">
-              <div class="media">
-                <div class="d-flex">
-                  <img src="assets/images/symptoms-user/symptoms-3.png" alt="" />
-                </div>
-                <div class="media-body">
-                  <h4>Dry Cough</h4>
-                  <p>
-                    Coughing is another key symptom, but it's not just any
-                    cough, said Schaffner. It should be a dry cough that you
-                    feel in your chest.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="700ms">
-            <div class="symptoms_item">
-              <div class="media">
-                <div class="d-flex">
-                  <img src="assets/images/symptoms-user/symptoms-4.png" alt="" />
-                </div>
-                <div class="media-body">
-                  <h4>Headache</h4>
-                  <p>
-                    Around 1 out of every 6 people who gets COVID-19 becomes
-                    seriously ill and develops difficulty breathing or
-                    shortness of breath.
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -278,8 +97,8 @@
     <section class="protect_yourself_area p_100">
       <div class="container">
         <div class="main_title text-center">
-          <h5>What you need to do</h5>
-          <h2>How to protect yourself?</h2>
+          <h5>Corona Virüsten Uzak Durun!</h5>
+          <h2>Korunmak için neler yapmalıyız?</h2>
         </div>
         <div class="row protect_inner">
           <div class="col-lg-6">
@@ -287,34 +106,30 @@
               <div class="col-6">
                 <div class="protect_list_item">
                   <div class="protect_list_title">
-                    <h3>You should do</h3>
-                    <h6>Be sure to follow it</h6>
+                    <h3>Yapmanız gerekenler</h3>
+                    <h6>Corona'yı önleyin</h6>
                   </div>
                   <ul class="nav flex-column">
                     <li>
-                      <a href="#"><i class="linearicons-home4"></i>Stay at home</a>
+                      <a href="#"><i class="linearicons-home4"></i>Evde kal</a>
                     </li>
                     <li>
-                      <a href="#"><i class="linearicons-desk-tape"></i>Wear mask</a>
+                      <a href="#"><i class="linearicons-desk-tape"></i>Maske tak</a>
                     </li>
                     <li>
-                      <a href="#"><i class="linearicons-tissue"></i>Always use
-                        tissues</a>
+                      <a href="#"><i class="linearicons-tissue"></i>Kolonya kullan</a>
                     </li>
                     <li>
-                      <a href="#"><i class="linearicons-couch"></i>Disinfect your
-                        home</a>
+                      <a href="#"><i class="linearicons-couch"></i>Dezenfektan kullan</a>
                     </li>
                     <li>
-                      <a href="#"><i class="linearicons-rain"></i>Wash your hands</a>
+                      <a href="#"><i class="linearicons-rain"></i>Ellerini sık sık yıka</a>
                     </li>
                     <li>
-                      <a href="#"><i class="linearicons-thermometer"></i>Frequent
-                        self-isolation</a>
+                      <a href="#"><i class="linearicons-thermometer"></i>Sık sık kendini izole et</a>
                     </li>
                     <li>
-                      <a href="#"><i class="linearicons-bottle"></i>Frequent
-                        waterintake</a>
+                      <a href="#"><i class="linearicons-bottle"></i>Tokalaşma</a>
                     </li>
                   </ul>
                 </div>
@@ -322,54 +137,48 @@
               <div class="col-6">
                 <div class="protect_list_item red">
                   <div class="protect_list_title">
-                    <h3>You should avoid</h3>
-                    <h6>Be sure to follow it</h6>
+                    <h3>Yapmamanız gerekenler</h3>
+                    <h6>Corona önlemleri</h6>
                   </div>
                   <ul class="nav flex-column">
                     <li>
-                      <a href="#"><i class="linearicons-man-woman"></i>Social
-                        distance</a>
+                      <a href="#"><i class="linearicons-man-woman"></i>Sosyal mesafeyi aşma</a>
                     </li>
                     <li>
-                      <a href="#"><i class="linearicons-paw"></i>Avoid animals</a>
+                      <a href="#"><i class="linearicons-paw"></i>Hastalık şüphelilerinde uzak dur</a>
                     </li>
                     <li>
-                      <a href="#"><i class="linearicons-woman"></i>Don't touch your
-                        face</a>
+                      <a href="#"><i class="linearicons-woman"></i>Kucaklaşmadan kaçın</a>
                     </li>
                     <li>
-                      <a href="#"><i class="linearicons-hand"></i>Avoid handshaking</a>
+                      <a href="#"><i class="linearicons-hand"></i>Tokalaşmaktan kaçın</a>
                     </li>
                     <li>
-                      <a href="#"><i class="linearicons-chair"></i>Avoid infected
-                        surfaces</a>
+                      <a href="#"><i class="linearicons-chair"></i>Kalabalık ortamlardan uzak dur</a>
                     </li>
                     <li>
-                      <a href="#"><i class="linearicons-drop-crossed"></i>Avoid
-                        droplets</a>
+                      <a href="#"><i class="linearicons-drop-crossed"></i>Seyehat etme</a>
                     </li>
                     <li>
-                      <a href="#"><i class="linearicons-plane-crossed"></i>Don’t
-                        travel</a>
+                      <a href="#"><i class="linearicons-plane-crossed"></i>Misafir kabul etme</a>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
             <div class="protect_self_text">
-              <h3>What does self-isolation involve?</h3>
+              <h3>Kendini nasıl izole edebilirsin?</h3>
               <p>
-                If you need to self-isolate, you should take action
-                immediately. You must stay inside and avoid all contact with
-                other people.
+                Eger kendinizde korona belirtileri hissetiniz ise öncelikle en yakın sağlık kuruluşu ile irtibata geçene kadar
+                kimseyle tokalaşmayın kalabalık ortamlardan uzak durun temastan ve yakınlaşmaktan kaçının.
               </p>
-              <a class="text_btn" href="#">How else can you protect yourself?
+              <a class="text_btn" target="_blank" href="https://covid19.saglik.gov.tr/">Kendinizi nasıl koruyabilirsiniz?
                 <i class="linearicons-arrow-right"></i></a>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="protect_img text-center apps_craft_animation">
-              <img class="img-fluid wow fadeIn" data-wow-delay="500ms" src="assets/images/protect-img.png" alt="" />
+              <img class="img-fluid wow fadeIn" data-wow-delay="500ms" src="rc/assets/siteAssets/images/protect-img.png" alt="" />
               <ul class="nav">
                 <li><img src="src/assets/siteAssets/images/icon/project-virus-1.png" alt=""></li>
                 <li><img src="src/assets/siteAssets/images/icon/project-virus-2.png" alt=""></li>
@@ -390,87 +199,84 @@
     <section class="washing_process_area pad_btm">
       <div class="container">
         <div class="main_title text-center white">
-          <h5>Hand washing process</h5>
-          <h2>How to wash your Hands</h2>
+          <h5>El yıkama işlemi</h5>
+          <h2>Ellerinizi nasıl yıkamalısınız</h2>
         </div>
         <div class="washing_process_inner row">
           <div class="col-lg-2 col-sm-4 col-6 wow fadeIn" data-wow-delay="400ms">
             <div class="washing_item">
               <div class="icon">
-                <img src="assets/images/icon/washing-1.png" alt="" />
+                <img src="src/assets/siteAssets/images/icon/washing-1.png" alt="" />
                 <div class="number">
                   1
                 </div>
               </div>
-              <p><span>Apply soap</span> and ruv your hands together</p>
+              <p><span>Sabun sürün</span> ve ellerinizi birbirine ovun</p>
             </div>
           </div>
           <div class="col-lg-2 col-sm-4 col-6 wow fadeIn" data-wow-delay="500ms">
             <div class="washing_item">
               <div class="icon">
-                <img src="assets/images/icon/washing-2.png" alt="" />
+                <img src="src/assets/siteAssets/images/icon/washing-2.png" alt="" />
                 <div class="number">
                   2
                 </div>
               </div>
               <p>
-                <span>Use one hand</span> to rub the back of the other hand
-                and vice versa
+                <span>Bir elinizi </span> diğer elinizin arkasını ovmak için
+                kullanın ve tersini yapın
               </p>
             </div>
           </div>
           <div class="col-lg-2 col-sm-4 col-6 wow fadeIn" data-wow-delay="600ms">
             <div class="washing_item">
               <div class="icon">
-                <img src="assets/images/icon/washing-3.png" alt="" />
+                <img src="src/assets/siteAssets/images/icon/washing-3.png" alt="" />
                 <div class="number">
                   3
                 </div>
               </div>
               <p>
-                <span>Rub your hands</span> together and clean between your
-                fingers
+                <span>Ellerinizi</span> tbirbirine sürtün ve parmaklarınızın arasını temizleyin
               </p>
             </div>
           </div>
           <div class="col-lg-2 col-sm-4 col-6 wow fadeIn" data-wow-delay="700ms">
             <div class="washing_item">
               <div class="icon">
-                <img src="assets/images/icon/washing-4.png" alt="" />
+                <img src="src/assets/siteAssets/images/icon/washing-4.png" alt="" />
                 <div class="number">
                   4
                 </div>
               </div>
               <p>
-                <span>Rub the back</span> of your fingers against your palms
+                <span>Parmaklarınızın</span> arkasını avuçlarınıza sürtün
               </p>
             </div>
           </div>
           <div class="col-lg-2 col-sm-4 col-6 wow fadeIn" data-wow-delay="800ms">
             <div class="washing_item">
               <div class="icon">
-                <img src="assets/images/icon/washing-5.png" alt="" />
+                <img src="src/assets/siteAssets/images/icon/washing-5.png" alt="" />
                 <div class="number">
                   5
                 </div>
               </div>
               <p>
-                <span>Rub your thumb</span> using your other hand and vice
-                versa
+                <span>Parmaklarınızın</span> arkasını avuçlarınıza sürtün
               </p>
             </div>
           </div>
           <div class="col-lg-2 col-sm-4 col-6 wow fadeIn" data-wow-delay="900ms">
             <div class="washing_item">
               <div class="icon">
-                <img src="assets/images/icon/washing-6.png" alt="" />
+                <img src="src/assets/siteAssets/images/icon/washing-6.png" alt="" />
                 <div class="number">
                   6
                 </div>
               </div>
               <p>
-                <span>Rub your tips</span> of your fingers on the palm of your
-                other hand and vice versa
+                <span>Parmak uçlarınızı</span> diğer elinizin avuç içine sürün ve tersini yapın
               </p>
             </div>
           </div>
@@ -480,8 +286,8 @@
     <section class="answers_area p_100">
       <div class="container">
         <div class="main_title">
-          <h5>Have questions? Find answers!</h5>
-          <h2>Frequently Asked Questions</h2>
+          <h3>Corona Virüs Nedir!</h3>
+          <h5>Corona Virüs Hakkında Sık Sorulan Sorular</h5>
         </div>
         <div class="row answer_inner">
           <div class="col-lg-4">
@@ -491,7 +297,7 @@
                   <div class="card-header" id="headingOne">
                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
                             aria-expanded="true" aria-controls="collapseOne">
-                      Pandemic
+                      Corona Virüs Hakkında
                       <i class="linearicons-chevron-down"></i>
                     </button>
                   </div>
@@ -502,276 +308,19 @@
                       <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
                           <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                             aria-controls="home" aria-selected="true">What are coronaviruses?</a>
+                             aria-controls="home" aria-selected="true">Corona Virüsü (Koronavirüs) Belirtileri Nelerdir?</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                             aria-controls="profile" aria-selected="false">What is the COVID-19 virus?</a>
+                             aria-controls="profile" aria-selected="false">Corona Virüsü (Koronavirüs) Tedavisi Nasıl Yapılır?</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                             aria-controls="contact" aria-selected="false">What is the difference between COVID-19
-                            and
-                            the
-                            flu?</a>
+                             aria-controls="contact" aria-selected="false">Bağışıklık Sistemi Koronavirüsle Nasıl Savaşıyor?</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" id="four-tab" data-toggle="tab" href="#four" role="tab"
-                             aria-controls="four" aria-selected="false">How is the
-                            virus spread?</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="five-tab" data-toggle="tab" href="#five" role="tab"
-                             aria-controls="five" aria-selected="false">What are
-                            the symptoms?</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingTwo">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      About COVID-19
-                      <i class="linearicons-chevron-down"></i>
-                    </button>
-                  </div>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body">
-                      <ul class="nav nav-tabs" id="myTab2" role="tablist">
-                        <li class="nav-item">
-                          <a class="nav-link" id="home2-tab" data-toggle="tab" href="#home2" role="tab"
-                             aria-controls="home2" aria-selected="true">What are
-                            coronaviruses?</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="profile2-tab" data-toggle="tab" href="#profile2" role="tab"
-                             aria-controls="profile2" aria-selected="false">What is the COVID-19 virus?</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="contact2-tab" data-toggle="tab" href="#contact2" role="tab"
-                             aria-controls="contact2" aria-selected="false">What is the difference between COVID-19
-                            and
-                            the
-                            flu?</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="four2-tab" data-toggle="tab" href="#four2" role="tab"
-                             aria-controls="four2" aria-selected="false">How is
-                            the virus spread?</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="five2-tab" data-toggle="tab" href="#five2" role="tab"
-                             aria-controls="five2" aria-selected="false">What are
-                            the symptoms?</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Protecting against COVID-19
-                      <i class="linearicons-chevron-down"></i>
-                    </button>
-                  </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                       data-parent="#accordionExample">
-                    <div class="card-body">
-                      <ul class="nav nav-tabs" id="myTab3" role="tablist">
-                        <li class="nav-item">
-                          <a class="nav-link" id="home3-tab" data-toggle="tab" href="#home3" role="tab"
-                             aria-controls="home3" aria-selected="true">What are
-                            coronaviruses?</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="profile3-tab" data-toggle="tab" href="#profile3" role="tab"
-                             aria-controls="profile3" aria-selected="false">What is the COVID-19 virus?</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="contact3-tab" data-toggle="tab" href="#contact3" role="tab"
-                             aria-controls="contact3" aria-selected="false">What is the difference between COVID-19
-                            and
-                            the
-                            flu?</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="four3-tab" data-toggle="tab" href="#four3" role="tab"
-                             aria-controls="four3" aria-selected="false">How is
-                            the virus spread?</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="five3-tab" data-toggle="tab" href="#five3" role="tab"
-                             aria-controls="five3" aria-selected="false">What are
-                            the symptoms?</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingfour">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                      Work and travel arrangements
-                      <i class="linearicons-chevron-down"></i>
-                    </button>
-                  </div>
-                  <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordionExample">
-                    <div class="card-body">
-                      <ul class="nav nav-tabs" id="myTab4" role="tablist">
-                        <li class="nav-item">
-                          <a class="nav-link" id="home4-tab" data-toggle="tab" href="#home4" role="tab"
-                             aria-controls="home4" aria-selected="true">What are
-                            coronaviruses?</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="profile4-tab" data-toggle="tab" href="#profile4" role="tab"
-                             aria-controls="profile4" aria-selected="false">What is the COVID-19 virus?</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="contact4-tab" data-toggle="tab" href="#contact4" role="tab"
-                             aria-controls="contact4" aria-selected="false">What is the difference between COVID-19
-                            and
-                            the
-                            flu?</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="four4-tab" data-toggle="tab" href="#four4" role="tab"
-                             aria-controls="four4" aria-selected="false">How is
-                            the virus spread?</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="five4-tab" data-toggle="tab" href="#five4" role="tab"
-                             aria-controls="five4" aria-selected="false">What are
-                            the symptoms?</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingfive">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
-                      About university and school
-                      <i class="linearicons-chevron-down"></i>
-                    </button>
-                  </div>
-                  <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordionExample">
-                    <div class="card-body">
-                      <ul class="nav nav-tabs" id="myTab5" role="tablist">
-                        <li class="nav-item">
-                          <a class="nav-link" id="home5-tab" data-toggle="tab" href="#home5" role="tab"
-                             aria-controls="home5" aria-selected="true">What are
-                            coronaviruses?</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="profile5-tab" data-toggle="tab" href="#profile5" role="tab"
-                             aria-controls="profile5" aria-selected="false">What is the COVID-19 virus?</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="contact5-tab" data-toggle="tab" href="#contact5" role="tab"
-                             aria-controls="contact5" aria-selected="false">What is the difference between COVID-19
-                            and
-                            the
-                            flu?</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="four5-tab" data-toggle="tab" href="#four5" role="tab"
-                             aria-controls="four5" aria-selected="false">How is
-                            the virus spread?</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="five5-tab" data-toggle="tab" href="#five5" role="tab"
-                             aria-controls="five5" aria-selected="false">What are
-                            the symptoms?</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingsix">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
-                      Home isolation
-                      <i class="linearicons-chevron-down"></i>
-                    </button>
-                  </div>
-                  <div id="collapsesix" class="collapse" aria-labelledby="headingsix" data-parent="#accordionExample">
-                    <div class="card-body">
-                      <ul class="nav nav-tabs" id="myTab6" role="tablist">
-                        <li class="nav-item">
-                          <a class="nav-link" id="home6-tab" data-toggle="tab" href="#home6" role="tab"
-                             aria-controls="home6" aria-selected="true">What are
-                            coronaviruses?</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="profile6-tab" data-toggle="tab" href="#profile6" role="tab"
-                             aria-controls="profile6" aria-selected="false">What is the COVID-19 virus?</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="contact6-tab" data-toggle="tab" href="#contact6" role="tab"
-                             aria-controls="contact6" aria-selected="false">What is the difference between COVID-19
-                            and
-                            the
-                            flu?</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="four6-tab" data-toggle="tab" href="#four6" role="tab"
-                             aria-controls="four6" aria-selected="false">How is
-                            the virus spread?</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="five6-tab" data-toggle="tab" href="#five6" role="tab"
-                             aria-controls="five6" aria-selected="false">What are
-                            the symptoms?</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingseven">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
-                      Social distancing
-                      <i class="linearicons-chevron-down"></i>
-                    </button>
-                  </div>
-                  <div id="collapseseven" class="collapse" aria-labelledby="headingseven"
-                       data-parent="#accordionExample">
-                    <div class="card-body">
-                      <ul class="nav nav-tabs" id="myTab7" role="tablist">
-                        <li class="nav-item">
-                          <a class="nav-link" id="home7-tab" data-toggle="tab" href="#home7" role="tab"
-                             aria-controls="home7" aria-selected="true">What are
-                            coronaviruses?</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="profile7-tab" data-toggle="tab" href="#profile7" role="tab"
-                             aria-controls="profile7" aria-selected="false">What is the COVID-19 virus?</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="contact7-tab" data-toggle="tab" href="#contact7" role="tab"
-                             aria-controls="contact7" aria-selected="false">What is the difference between COVID-19
-                            and
-                            the
-                            flu?</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="four7-tab" data-toggle="tab" href="#four7" role="tab"
-                             aria-controls="four7" aria-selected="false">How is
-                            the virus spread?</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="five7-tab" data-toggle="tab" href="#five7" role="tab"
-                             aria-controls="five7" aria-selected="false">What are
-                            the symptoms?</a>
+                             aria-controls="four" aria-selected="false">Coronavirus (Koronavirüs) Tanısı Nasıl Konulur?</a>
                         </li>
                       </ul>
                     </div>
@@ -783,1240 +332,71 @@
           <div class="col-lg-8">
             <div class="tab-content answer_details" id="myTabContent">
               <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                <h4>What are coronaviruses?</h4>
+                <h4>Corona Virüsü (Koronavirüs) Belirtileri Nelerdir?</h4>
                 <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
+                  Yeni koronavirüs enfeksiyonu belirtileri arasında ateş, öksürük, nefes darlığı ve solunum güçlüğü bulunur. Daha ağır vakalarda enfeksiyon zatürreye, akut solunum yetmezliğine, böbrek yetmezliğine ve hatta ölüme neden olabilir.
+
+                  Bütün virüs türleri gibi zaman içinde sürekli evrimleşen koronavirüsler 2002 senesinden itibaren grip benzeri semptomlar gösteren daha ciddi sağlık sorunlarına neden olmaya başlamıştır.
+
+                  Koronavirüsler hayvanlar ve insanlar arasında bulaşma riski taşıyan, yani zoonik virüslerdir. Geçmişte MERS adıyla bilinen Orta Doğu Solunum Sendromu’nun develerden, SARS adıyla bilinen Şiddetli Akut Solunum Sendromu’nun da misk kedilerinden insana geçtiği düşünülmektedir.
+
+                  Koronavirüs enfeksiyonlarının yayılmasını önlemek için standart öneriler arasında düzenli olarak alkollü el dezenfektanları veya su-sabunla el yıkanması ve temizliği, öksürme ve hapşırma sırasında ağız ve burnun mendil veya dirsek içi ile kapatılması, bu semptomları gösteren kişilerle yakınlaşmaktan kaçınılması yer alır. Kullanılan mendilin derhal çöpe atılması gereklidir.
+
+                  Koronavirüs vakalarının görüldüğü yerlerde canlı hayvan pazarlarından uzak durulması tavsiye edilir.
+
+                  Koronavirüsün belirtileri arasında en sık karşılaşılan semptomlar birkaç gün boyunca devam eden yüksek ateş, baş ağrısı ve kuru öksürük olarak bilinmektedir. Fakat bazı hastalarda aşağıdaki semptomlarda gözlemlenmektedir;
+
+                  Nefes darlığı,
+                  Balgamlı öksürük,
+                  Boğaz ağrısı,
+                  Kas ve eklem ağrıları,
+                  Mide bulantısı veya kusma,
+                  İştahsızlık,
+                  Burun akıntısı,
+                  Baş ağrısı,
+                  Ağır solunum yetmezliği,
+                  Böbrek yetmezliği gibi durumlar koronavirüsün belirtileri arasında yer alabilmektedir.
+                  Koronavirüsü belirtileri gösteren kişilerin ilgili sağlık kurumlarına gitmeden önce, çevresindeki kişilere bulaştırmamak için maske takarak önlem alması gerekmektedir.
                 </p>
               </div>
               <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                <h4>What is the COVID-19 virus?</h4>
+                <h4>Corona Virüsü (Koronavirüs) Tedavisi Nasıl Yapılır?</h4>
                 <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
+                  SARS-CoV-2 Akut Solunum Yolu Hastalığı için şu anda belirli bir kesin tedavi yolu mevcut değildir. Gerçekleştirilen tedavi ateş, kuru öksürük ve nefes darlığı gibi belirtilerin hafifletilmesine odaklanır.
+
+                  Mevcut zatürre tedavilerinin, bu hastalık için etkin olup olmadığı yönünde araştırmalar sürmektedir. Hastalık virüs temelli olduğu için antibiyotikler etkili değildir.
+
+                  Koronavirüs (COVID-19) hastalığının teşhis edilmesinin ardından hastalığın belirtilerini kontrol etmek için doktor kontrolünde ağrı kesici ve ateş düşürücü ilaçlar kullanılabilir.
+
+                  Hasta bireyin bulunduğu odaların neminin dengelenmesi, çay gibi sıcak içeceklerin tüketilmesi ile ılık duşlar boğaz ağrısı ve/veya öksürüğün hafiflemesine yardımcı olacaktır.
+
+                  Bol sıvı tüketmek, dinlenmek ve düzenli uyku hastalığın belirtilerinin hafiflemesi için önemlidir. Ancak hastalığın belirtileri normal soğuk algınlığı sürecinden daha ağır seyretmeye başlarsa mutlaka uzman bir doktora başvurmak gereklidir.
+
+                  Eğer, kendinizde veya çevrenizde kişilerde yeni koronavirüs hastalığı belirtileri olduğunuz düşünüyorsanız, en kısa zamanda, vakit kaybetmeden, maske takarak bir sağlık kuruluşuna başvurulması gerekmektedir.
                 </p>
               </div>
               <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                <h4>What is the difference between COVID-19 and the flu?</h4>
+                <h4>Bağışıklık Sistemi Koronavirüsle Nasıl Savaşıyor?</h4>
                 <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
+                  Vücudumuza yabancı bir organizma, bir madde girdiği zaman bağışıklık sistemi hücrelerimiz bunu hemen algılarlar. Bunu algıladıkları zaman ona karşı hem hücresel düzeyde hem de antikor adı verilen proteinler düzeyinde vücudumuzu bu organizmalara karşı korumaya çalışırlar.
+
+                  Vücudumuza yabancı bir madde girdiği zaman, bu yabancı maddelerin üzerindeki yabancı protein vücutta bulunan diğer proteinlerden farklı olduğu çeşitli savunma hücrelerinin yüzeyinde bulunan almaçlar tarafından algılanır.
+
+                  Algılanan bu yabancı proteinle tam anahtar kilit usülü bağlanacak ve onu etkisiz hale getirecek antikor proteinleri vücut tarafından üretilir.
+
+                  Antikorlar yabancı proteinlere bağlanarak onları işlevsizleştirir. Örneğin, virüslerin hücrelerimize girmekte kullandıkları proteinler vücudun antikorları tarafından işlevsizleştirildiğinde virüs hücrelere tutunamaz ve içeri giremez. Aşı üretiminde de bu mantık kullanılır.
+
+                  Aşı içerisinde bulunan madde virüsün kendisi değil, hücre içine girmekte kullandığı proteinleridir. Bu sayede vücudumuz önceden bu proteini bloke edecek, bağlayacak antikorları vücudumuzda oluşturur.
+
+                  Bu sayede vücut, etkenin kendisi olan virüsle karşılaşsa dahi, virüsün hücre içine girmekte kullandığı proteinleri antikorlar sayesinde hızlıca işlevsizleştirerek hasta olmamızı engeller.
                 </p>
               </div>
               <div class="tab-pane fade" id="four" role="tabpanel" aria-labelledby="four-tab">
-                <h4>How is the virus spread?</h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="five" role="tabpanel" aria-labelledby="five-tab">
-                <h4>What are the symptoms?</h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="home2" role="tabpanel" aria-labelledby="home2-tab">
-                <h4>What are coronaviruses? 1</h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="profile2" role="tabpanel" aria-labelledby="profile2-tab">
-                <h4>What is the COVID-19 virus? 2</h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="contact2" role="tabpanel" aria-labelledby="contact2-tab">
-                <h4>
-                  What is the difference between COVID-19 and the flu? 3
-                </h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="four2" role="tabpanel" aria-labelledby="four2-tab">
-                <h4>How is the virus spread? 4</h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="five2" role="tabpanel" aria-labelledby="five2-tab">
-                <h4>What are the symptoms? 5</h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="home3" role="tabpanel" aria-labelledby="home3-tab">
-                <h4>What are coronaviruses? 1</h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="profile3" role="tabpanel" aria-labelledby="profile3-tab">
-                <h4>What is the COVID-19 virus? 2</h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="contact3" role="tabpanel" aria-labelledby="contact3-tab">
-                <h4>
-                  What is the difference between COVID-19 and the flu? 3
-                </h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="four3" role="tabpanel" aria-labelledby="four3-tab">
-                <h4>How is the virus spread? 4</h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="five3" role="tabpanel" aria-labelledby="five3-tab">
-                <h4>What are the symptoms? 5</h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="home4" role="tabpanel" aria-labelledby="home4-tab">
-                <h4>What are coronaviruses? 1</h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="profile4" role="tabpanel" aria-labelledby="profile4-tab">
-                <h4>What is the COVID-19 virus? 2</h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="contact4" role="tabpanel" aria-labelledby="contact4-tab">
-                <h4>
-                  What is the difference between COVID-19 and the flu? 3
-                </h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="four4" role="tabpanel" aria-labelledby="four4-tab">
-                <h4>How is the virus spread? 4</h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="five4" role="tabpanel" aria-labelledby="five4-tab">
-                <h4>What are the symptoms? 5</h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="home5" role="tabpanel" aria-labelledby="home5-tab">
-                <h4>What are coronaviruses? 1</h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="profile5" role="tabpanel" aria-labelledby="profile5-tab">
-                <h4>What is the COVID-19 virus? 2</h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="contact5" role="tabpanel" aria-labelledby="contact5-tab">
-                <h4>
-                  What is the difference between COVID-19 and the flu? 3
-                </h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="four5" role="tabpanel" aria-labelledby="four5-tab">
-                <h4>How is the virus spread? 4</h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="five5" role="tabpanel" aria-labelledby="five5-tab">
-                <h4>What are the symptoms? 5</h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="home6" role="tabpanel" aria-labelledby="home6-tab">
-                <h4>What are coronaviruses? 1</h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="profile6" role="tabpanel" aria-labelledby="profile6-tab">
-                <h4>What is the COVID-19 virus? 2</h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="contact6" role="tabpanel" aria-labelledby="contact6-tab">
-                <h4>
-                  What is the difference between COVID-19 and the flu? 3
-                </h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="four6" role="tabpanel" aria-labelledby="four6-tab">
-                <h4>How is the virus spread? 4</h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="five6" role="tabpanel" aria-labelledby="five6-tab">
-                <h4>What are the symptoms? 5</h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="home7" role="tabpanel" aria-labelledby="home7-tab">
-                <h4>What are coronaviruses? 1</h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="profile7" role="tabpanel" aria-labelledby="profile7-tab">
-                <h4>What is the COVID-19 virus? 2</h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="contact7" role="tabpanel" aria-labelledby="contact7-tab">
-                <h4>
-                  What is the difference between COVID-19 and the flu? 3
-                </h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="four7" role="tabpanel" aria-labelledby="four7-tab">
-                <h4>How is the virus spread? 4</h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
-                </p>
-              </div>
-              <div class="tab-pane fade" id="five7" role="tabpanel" aria-labelledby="five7-tab">
-                <h4>What are the symptoms? 5</h4>
-                <p>
-                  The first symptoms of COVID-19 and influenza (flu)
-                  infections are often very similar. They both cause fever and
-                  similar respiratory symptoms, which can then range from mild
-                  through to severe disease, and sometimes can be fatal.
-                </p>
-                <p>
-                  Both viruses are also transmitted in the same way, by
-                  coughing or sneezing, or by contact with hands, surfaces or
-                  objects contaminated with the virus. As a result, the same
-                  public health measures, such as hand hygiene (hand washing),
-                  good respiratory etiquette (coughing into your elbow or into
-                  a tissue and immediately disposing of the tissue) and good
-                  household cleaning are important actions to prevent both
-                  infections.
-                </p>
-                <p>
-                  The speed of transmission is an important difference between
-                  the two viruses. Influenza typically has a shorter
-                  incubation period (the time from infection to appearance of
-                  symptoms) than COVID-19. This means that influenza can
-                  spread faster than COVID-19.
-                </p>
-                <p>
-                  While the range of symptoms for the two viruses is similar,
-                  the fraction with severe disease appears to be higher for
-                  COVID-19. While most people have mild symptoms,
-                  approximately 15% of people have severe infections and 5%
-                  require intensive care in a hospital ICU. The proportions of
-                  severe and critical COVID-19 infections are higher than for
-                  influenza infections.
+                <h4>Coronavirus (Koronavirüs) Tanısı Nasıl Konulur?</h4>
+                <p>
+                  Yeni koronavirüsün tanısı için laboratuvar ortamında test yapılması gereklidir. Koronavirüsün kesin tanısı moleküler testler ile gerçekleştirilir.
+
+                  Olası vaka tanımına uyan kişilerden alınabilecek boğaz sürüntüsü, balgam gibi örnekler üzerinde virüsün genetik materyalinin tespit edilmesi ile tanı konmaktadır. Alınan örnekler yapılan tanı testleri, şu anda ülkemizde “Halk Sağlığı Genel Müdürlüğü Ulusal Viroloji Referans Laboratuvarında” ve Sağlık Bakanlığı tarafından belirlenen “Halk Sağlığı Laboratuvarlarında” yapılabilmektedir.
                 </p>
               </div>
             </div>
@@ -2024,75 +404,15 @@
         </div>
       </div>
     </section>
-    <section class="home_latest_blog_area">
-      <div class="container">
-        <div class="main_title text-center">
-          <h5>Latest Blog Posts</h5>
-          <h2>Recent from Updates</h2>
-          <p>
-            Find out updates you need to know about preventing, isolating and
-            treating coronavirus and COVID-19.
-          </p>
-        </div>
-        <div class="row l_blog_inner">
-          <div class="col-lg-8">
-            <div class="big_l_blog_item">
-              <div class="l_blog_img">
-                <img class="img-fluid" src="assets/images/blog/latest-blog/l-blog.jpg" alt="" />
-              </div>
-              <div class="l_blog_text">
-                <div class="date">
-                  <a href="#"><i class="linearicons-calendar-full"></i> Apr 12, 2020</a>
-                  <a href="#"><i class="linearicons-bubbles"></i> 22</a>
-                </div>
-                <div class="blog_btm_text">
-                  <div class="tag">Quarantine</div>
-                  <div class="author">
-                    <a href="#">by Sheryl Smith</a>
-                    <a href="#"><i class="linearicons-radio-button"></i> 4 min read</a>
-                  </div>
-                  <a href="#">
-                    <h3>How to treat COVID-19 <br />coronavirus at home?</h3>
-                  </a>
-                  <a class="text_btn" href="#">Read more <i class="linearicons-arrow-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="small_l_blog_item">
-              <div class="l_blog_img">
-                <img class="img-fluid" src="assets/images/blog/latest-blog/l-blog-2.jpg" alt="" />
-              </div>
-              <div class="l_blog_text">
-                <div class="date">
-                  <a href="#"><i class="linearicons-calendar-full"></i> Apr 11, 2020</a>
-                  <a href="#"><i class="linearicons-bubbles"></i> 39</a>
-                </div>
-                <a href="#">
-                  <h3>What is an underlying health condition?</h3>
-                </a>
-                <a class="text_btn" href="#">Read more <i class="linearicons-arrow-right"></i></a>
-              </div>
-            </div>
-            <div class="small_l_blog_item">
-              <div class="l_blog_img">
-                <img class="img-fluid" src="assets/images/blog/latest-blog/l-blog-3.jpg" alt="" />
-              </div>
-              <div class="l_blog_text">
-                <div class="date">
-                  <a href="#"><i class="linearicons-calendar-full"></i> Apr 11, 2020</a>
-                  <a href="#"><i class="linearicons-bubbles"></i> 39</a>
-                </div>
-                <a href="#">
-                  <h3>What is an underlying health condition?</h3>
-                </a>
-                <a class="text_btn" href="#">Read more <i class="linearicons-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+
   </div>
 </template>
+
+<script>
+import Api from "../components/Api"
+export default {
+  components : {
+    appApi : Api
+  }
+}
+</script>
