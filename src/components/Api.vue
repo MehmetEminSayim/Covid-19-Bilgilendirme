@@ -1,7 +1,7 @@
 <template>
   <section class="world_wide_tracker pad_top">
     <div class="container">
-      <img class="tracker_map" src="src/assets/siteAssets/images/tracker-map-bg.png" alt="" />
+
       <div class="tracker_text">
         <h5>Türkiye Bazlı Corona Tablosu</h5>
         <h2>Onaylanmış Koronavirüs Vakaları</h2>
