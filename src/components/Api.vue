@@ -1,7 +1,6 @@
 <template>
   <section class="world_wide_tracker pad_top">
     <div class="container">
-
       <div class="tracker_text">
         <h5>Onaylanmış Koronavirüs Vakaları</h5>
         <h2>Türkiye Covid 19 Verileri</h2>
