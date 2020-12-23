@@ -3,8 +3,8 @@
     <div class="container">
 
       <div class="tracker_text">
-        <h5>Türkiye Bazlı Corona Tablosu</h5>
-        <h2>Onaylanmış Koronavirüs Vakaları</h2>
+        <h5>Onaylanmış Koronavirüs Vakaları</h5>
+        <h2>Türkiye Covid 19 Verileri</h2>
         <p>Güncelleme Tarihi : {{otarih |moment("dddd,MMMM,YYYY")}}</p>
       </div>
       <div class="row tracker_inner" v-for="item in coronaverileri[0]" v-if="item.date == otarih">
@@ -14,7 +14,8 @@
               <img src="src/assets/siteAssets/images/icon/corona-yellow-1.png" alt="" />
             </div>
             <div class="media-body">
-              <h2>{{item.tests | rakam}}</h2>
+              <h2 v-if="item.tests">{{item.tests | rakam}}</h2>
+              <h4 v-if="!item.tests">Güncel vakalar bekleniyor...</h4>
               <p>Test Sayısı</p>
             </div>
           </div>
@@ -25,7 +26,8 @@
               <img src="src/assets/siteAssets/images/icon/corona-black-1.png" alt="" />
             </div>
             <div class="media-body">
-              <h2>{{item.cases | rakam}}</h2>
+              <h2 v-if="item.cases">{{item.cases | rakam}}</h2>
+              <h4 v-if="!item.cases">Güncel vakalar bekleniyor...</h4>
               <p>Günlük Vaka</p>
             </div>
           </div>
@@ -36,7 +38,8 @@
               <img src="src/assets/siteAssets/images/icon/corona-green-1.png" alt="" />
             </div>
             <div class="media-body">
-              <h2 >{{item.patients | rakam}}</h2>
+              <h2 v-if="item.patients" >{{item.patients | rakam}}</h2>
+              <h4 v-if="!item.patients">Güncel vakalar bekleniyor...</h4>
               <p>Günlük Hasta</p>
             </div>
           </div>
@@ -47,7 +50,8 @@
               <img src="src/assets/siteAssets/images/icon/corona-red-1.png" alt="" />
             </div>
             <div class="media-body">
-              <h2 id="">{{ item.deaths | rakam }}</h2>
+              <h2 v-if="item.deaths">{{ item.deaths | rakam }}</h2>
+              <h4 v-if="!item.deaths">Güncel vakalar bekleniyor...</h4>
               <p>Günlük Ölüm</p>
             </div>
           </div>
@@ -62,7 +66,8 @@
               <img src="src/assets/siteAssets/images/icon/corona-yellow-1.png" alt="" />
             </div>
             <div class="media-body">
-              <h2>{{item.recovered | rakam}}</h2>
+              <h2 v-if="item.recovered">{{item.recovered | rakam}}</h2>
+              <h4 v-if="!item.recovered">Güncel vakalar bekleniyor...</h4>
               <p>İyileşen Hasta </p>
             </div>
           </div>
@@ -73,7 +78,8 @@
               <img src="src/assets/siteAssets/images/icon/corona-black-1.png" alt="" />
             </div>
             <div class="media-body">
-              <h2>{{item.totalPatients | rakam}}</h2>
+              <h2 v-if="item.totalPatients">{{item.totalPatients | rakam}}</h2>
+              <h4 v-if="!item.totalPatients">Güncel vakalar bekleniyor...</h4>
               <p>Toplam Hasta</p>
             </div>
           </div>
@@ -84,7 +90,8 @@
               <img src="src/assets/siteAssets/images/icon/corona-green-1.png" alt="" />
             </div>
             <div class="media-body">
-              <h2 >{{item.totalDeaths | rakam}}</h2>
+              <h2  v-if="item.totalDeaths">{{item.totalDeaths | rakam}}</h2>
+              <h4 v-if="!item.totalDeaths">Güncel vakalar bekleniyor...</h4>
               <p>Toplam Ölüm</p>
             </div>
           </div>
@@ -95,7 +102,8 @@
               <img src="src/assets/siteAssets/images/icon/corona-red-1.png" alt="" />
             </div>
             <div class="media-body">
-              <h2 id="">{{ item.totalRecovered | rakam }}</h2>
+              <h2 v-if="item.totalRecovered">{{ item.totalRecovered | rakam }}</h2>
+              <h4 v-if="!item.totalRecovered">Güncel vakalar bekleniyor...</h4>
               <p>Toplam iyileşen hasta</p>
             </div>
           </div>
