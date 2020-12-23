@@ -4,6 +4,7 @@
       <div class="col-md-12 col-md-offset-2">
         <div class="main_title text-center">
           <h2>Genel Korona Virüs Tablosu</h2>
+          <p>{{coronaverileri[0].length}}</p>
         </div>
 
         <div class="fresh-table  toolbar-color-blue">
@@ -23,8 +24,7 @@
             <th data-field="" data-formatter="operateFormatter" data-events="operateEvents">Toplam vefat </th>
             </thead>
             <tbody>
-            <tr class="text-center" v-for="item in coronaverileri[0]">
-
+            <tr class="text-center" v-for="item in cordata[0]">
               <td>{{item.date}}</td>
               <td>{{ item.patients | rakam}}</td>
               <td>{{ item.deaths  | rakam}}</td>
@@ -49,7 +49,8 @@ export default {
     return {
       gtarih : new Date().getTime(),
       coronaverileri : [],
-      otarih : null
+      cordata : [],
+      otarih : null,
     }
   },
   methods: {
@@ -75,6 +76,7 @@ export default {
         let data = res.data
         this.coronaverileri.push({...data})
       })
+    this.cordata = this.coronaverileri
   }
 }
 
