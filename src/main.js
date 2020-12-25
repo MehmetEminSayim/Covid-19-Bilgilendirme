@@ -14,8 +14,8 @@ Vue.filter ("rakam",(value) =>{
 })
 
 
-axios.defaults.headers.common["authorization"] ="apikey 086SRq2aKCvnPFcQCitIgx:3dvTIBtPammLYg5Q5TxreZ"
-axios.defaults.headers.get["accept"] = "application/json";
+// axios.defaults.headers.common["authorization"] ="apikey 086SRq2aKCvnPFcQCitIgx:3dvTIBtPammLYg5Q5TxreZ"
+// axios.defaults.headers.get["accept"] = "application/json";
 
 new Vue({
   el: '#app',

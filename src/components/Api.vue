@@ -13,8 +13,7 @@
               <img src="src/assets/siteAssets/images/icon/corona-yellow-1.png" alt="" />
             </div>
             <div class="media-body">
-              <h2 v-if="coronaverileri[0].newCases">{{coronaverileri[0].newCases}}</h2>
-              <h4 v-if="!coronaverileri[0].newCases">Güncel vakalar bekleniyor...</h4>
+              <h4>Güncel vakalar bekleniyor...</h4>
               <p>Vaka Sayısı</p>
             </div>
           </div>
@@ -25,8 +24,8 @@
               <img src="src/assets/siteAssets/images/icon/corona-black-1.png" alt="" />
             </div>
             <div class="media-body">
-              <h2 v-if="coronaverileri[0].newDeaths">{{coronaverileri[0].newDeaths}}</h2>
-              <h4 v-if="!coronaverileri[0].newDeaths">Güncel vakalar bekleniyor...</h4>
+              <h2 ></h2>
+              <h4 >Güncel vakalar bekleniyor...</h4>
               <p>Günlük Ölüm</p>
             </div>
           </div>
@@ -37,8 +36,8 @@
               <img src="src/assets/siteAssets/images/icon/corona-green-1.png" alt="" />
             </div>
             <div class="media-body">
-              <h2 v-if="coronaverileri[0].totalCases" >{{coronaverileri[0].totalCases}}</h2>
-              <h4 v-if="!coronaverileri[0].totalCases">Güncel vakalar bekleniyor...</h4>
+
+              <h4>Güncel vakalar bekleniyor...</h4>
               <p>Toplam Hasta</p>
             </div>
           </div>
@@ -49,7 +48,7 @@
               <img src="src/assets/siteAssets/images/icon/corona-red-1.png" alt="" />
             </div>
             <div class="media-body">
-              <h2>{{ coronaverileri[0].totalRecovered}}</h2>
+              <h2></h2>
 
               <p>Toplam İyileşen Hasta
               </p>
@@ -57,15 +56,19 @@
           </div>
         </div>
         <br>
-
-
+        <button @click="slice" class="btn btn-primary">göster</button>
       </div>
-      <p>{{lastItem}}</p>
+      <p></p>
       <div class="tracker_btn">
           <a class="green_btn wow text-white fadeInUp" data-wow-delay="500" data-toggle="modal" data-target="#exampleModal"><i class="linearicons-earth-lock"></i> Corona Virüs Nedir?</a>
       </div>
     </div>
 
+    <ul>
+      <li>
+        {{userLastCount}}
+      </li>
+    </ul>
 
 
   </section>
@@ -74,22 +77,32 @@
 
 <script>
 import axios from  "axios"
+import db from  "../firebase"
 export default {
   data(){
     return {
       gtarih : new Date().getTime(),
       coronaverileri : [],
+      cordata : [],
+      userLastCount : null,
       otarih : null
     }
   },
+  methods: {
+    slice(){
+      this.cordata = this.coronaverileri[0]
+      var lastPosition = this.cordata.length -1;
+      console.log(lastPosition)
+    }
+  },
   created() {
-    axios.get("https://api.collectapi.com/corona/countriesData/Turkey").then(res => {
-      let data = res.data.result[6]
-      console.log(data)
-      for (let key in data){
-        this.coronaverileri.push(data)
-      }
-    })
+    // axios.get("https://api.collectapi.com/corona/countriesData/Turkey").then(res => {
+    //   let data = res.data.result[6]
+    //   console.log(data)
+    //   for (let key in data){
+    //     this.coronaverileri.push(data)
+    //   }
+    // })
 
     var today = new Date();
     var dd = today.getDate();
@@ -98,16 +111,17 @@ export default {
     var yyyy = today.getFullYear();
 
     today = dd+'/'+mm+'/'+yyyy;
-    console.log(today);
     this.otarih = today
-    //
-    //
-    // axios.get("https://raw.githubusercontent.com/ozanerturk/covid19-turkey-api/master/dataset/timeline.json")
-    // .then(res=> {
-    //   let data = res.data
-    //   this.coronaverileri.push(data)
-    //   console.log(this.coronaverileri[0])
-    // })
+
+
+    axios.get("https://raw.githubusercontent.com/ozanerturk/covid19-turkey-api/master/dataset/timeline.json")
+    .then(res=> {
+      let data = res.data
+       this.coronaverileri.push(data)
+
+    })
+
+
   }
 }
 
