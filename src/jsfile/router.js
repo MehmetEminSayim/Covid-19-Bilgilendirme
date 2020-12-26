@@ -16,6 +16,10 @@ Vue.use(VueRouter)
        component : About,
      },
      {
+       path : "/hakkimda",
+       component : About,
+     },
+     {
        path : "*",
        redirect : "/"
      }
